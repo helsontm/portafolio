@@ -1,0 +1,220 @@
+
+
+body{
+  background-color: #181823;
+  color: white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+}
+
+/* stylo de la caja principal*/
+.box{
+ 
+  display: flex;
+flex-wrap: wrap;
+justify-content: center; 
+
+
+}
+
+/*----------------Stylo del div de header---------------*/
+.header{
+  display: flex;
+}
+
+
+/*----------Stylo del Div del Meni-----------*/
+.menu{
+  display: flex;
+  justify-content: center;
+}
+
+/*-------------Stylo del ul-------*/
+ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+/*-----Stylo del Li-------*/
+li  {
+  display: block; 
+  padding-inline: 150px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.liAbout:hover{
+  color: #e40037;
+  text-shadow: 0 0 30px #e40037;
+  cursor: pointer;
+}
+
+.liProject:hover{
+  color: #10FFF1;
+  cursor: pointer;
+}
+
+.liContact:hover{
+  color:#0C08B1;
+  cursor: pointer;
+}
+
+/*--------Stylo de un Link-----------------*/
+.link{
+  text-decoration: none;
+}
+
+h1{
+  /*text-shadow: 0 0 30px #fff;*/
+}
+
+/* Stylo del acerca de mi, proyecto y contactenos */
+
+
+/*Stylo de la caja de la imagen de fondo */
+.contImageFigura{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+  width: 600px;
+  
+  padding: 0;
+  margin: 0;
+}
+
+/* Stylo de la imgane de fondo*/
+.ImageIco{
+  padding-top: -900px;
+ z-index: 2;
+  width: 80%;
+ 
+}
+
+/* Stylo de la palabra Acerca de mi*/
+.aboutMe{
+  font-weight: bold;
+  size: 300px;
+  position:absolute;
+  bottom: 260px;
+  z-index: 5;
+  opacity: 0.5;
+}
+
+h4{
+  font-size: xx-large;
+}
+
+/*Stylo del titulo  */
+.title{
+  color: #e40035d4;
+font-weight: bold;
+
+}
+
+
+
+/* stylo del parrafo informativo*/
+.parrafo{
+
+  padding-top: 30px;
+  background-color: transparent;
+  filter:alpha(opacity=70);
+-moz-opacity:.70;opacity:.70;
+  border-radius: 10px;
+  width: 600px;
+}
+
+/* stylo de la caja de las imagenes de tecnologias*/
+.contImages{
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* stylo imagen react gif*/
+.ImgReact{
+  width: 60px;
+  border-radius: 1000% 1000%;
+}
+
+.iconNode{
+  border-radius: 1000% 1000%;
+}
+
+/* stylo de hover imagen icon*/
+.iconPython:hover{
+  /*background: #e40035a8 ;*/
+  border-radius: 10px;
+  transform: scale(1.1); 
+}
+
+.iconJavascript{
+  border-radius: 50px;
+}
+.iconJavascript:hover{
+ /* background-color: #0b08b1ac;*/
+  border-radius: 10px;
+  transform: scale(1.1);
+}
+
+.iconNode:hover{
+  /*background-color: #10ffefb8;*/
+  border-radius: 10px;
+  transform: scale(1.1);
+  /*box-shadow: 0 0 20px #4f9;
+  box-shadow: 100% #10ffefb8;*/
+}
+
+.iconJava:hover{
+ /* background: #e40035a8 ;*/
+  border-radius: 10px;
+  transform: scale(1.1); 
+}
+
+.iconMysql:hover{
+ /* background-color: #0b08b1ac;*/
+  border-radius: 10px;
+  transform: scale(1.1);
+}
+
+.ImgReact:hover{
+
+ /* background-color: #10ffefb8;*/
+  border-radius: 1000% 1000%;
+  transform: scale(1.1);
+  box-shadow: 100% #10ffefb8;
+  /*box-shadow: 0 0 20px #4f9;*/
+}
+
+
+/*------------------------Footer-----------------------*/
+.icoFooter{
+  width: 30px;
+}
+
+.icoFooter:hover{
+  transform: scale(1.1); 
+}
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+ 
+}
+
+.h5Footer{
+  font-size:18px;
+ 
+}
+
+.contIconFooter{
+ 
+  padding: 20px;
+ 
+}
+

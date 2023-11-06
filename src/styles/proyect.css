@@ -1,0 +1,29 @@
+.divProject{
+    background-color: rgba(255, 255, 255, 0.082);
+    border-radius: 10px;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+   padding: 20px;
+   overflow-y:scroll;
+}
+
+iframe{
+    border: 1px solid black;
+  border-radius: 20px; 
+}
+
+.divFrame{
+   padding: 10px;
+   display:flex;
+   flex-wrap: wrap;
+}
+
+.divDescripcion{
+   padding-left: 10px;
+   padding-top: -10px;
+    width: 220px;
+    text-align: justify;
+}
