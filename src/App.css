@@ -9,7 +9,7 @@
 /* Works on Firefox */
 * {
   scrollbar-width:auto;
-  scrollbar-color: blue #16161F;
+  scrollbar-color: gray #16161F;
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -31,13 +31,15 @@ body{
   /*background-color: #181823;*/
   
   /*background:linear-gradient(0.25turn, rgba(90, 86, 103, 0.566),  rgba(9, 1, 15, 0.752)  );*/
-  background:linear-gradient(#1e1e23f0, #1e1e23fb),url("/public/datos.jpg");
+  background:linear-gradient(#1e1e23f0, #1e1e23fb);
   background-size: 100%;
   color: white;
   font-family:'Segoe UI', Roboto, Geneva, Verdana, Calibri, Helvetica;
   border-radius: 10px;
 
 }
+
+
 
 
 
@@ -83,7 +85,7 @@ body{
     position: relative;
     width: 40px;
     height: 20px;
-    background: linear-gradient(0.25turn,  rgba(93, 23, 154, 0.752) , rgba(36, 15, 119, 0.566) );
+    background: linear-gradient(0.25turn,  #4a4a4ff0,#4e75d9ef );
     appearance: none;   /* Hides certain features of widgets */ 
     outline: none;
     border-radius: 20px;
@@ -92,7 +94,7 @@ body{
   } 
   
   input[type="checkbox"]:checked {
-    background: linear-gradient(0.25turn, rgb(108, 155, 242),#7425e2, #5d0930 )
+    background: linear-gradient(0.25turn, #1e1e23f0,#818184f0 )
   }
   
   input[type="checkbox"]::before {
@@ -146,7 +148,8 @@ body{
   .liAbout:hover{
     opacity: 10;
     text-shadow: 0 0 40px #e40037;
-    cursor: pointer;
+    cursor: pointer #e40037, auto;
+    
   }
   
   .liProject:hover{

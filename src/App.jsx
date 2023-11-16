@@ -1,12 +1,31 @@
 import { HashRouter, Routes, Route, Link } from "react-router-dom";
+
+
+import {  useState } from "react";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Proyect from "./pages/Proyect";
 import Contact from "./pages/Contact";
-
 import './App.css'
 
+
 function App() {
+  /*Para Traducir  */
+  
+  
+
+
+
+  /* Funcion para cambiar de color el fondo  */
+  const [isOn, setIsOn] = useState(false);
+
+  const changeBulb = () => {
+      setIsOn(
+          document.body.classList.toggle("dark-mode")  
+      );
+  }
+
+
   
   return (
     <>
@@ -24,12 +43,18 @@ function App() {
           </div>
 
           <div className="titlehead">
-            <h3>Helson Tafur</h3>
+          <h3>-----</h3>
           </div>
      
         <div>
-        <input id="checkitem" type="checkbox"  />
+        <input id="checkitem" type="checkbox"  onClick={changeBulb}/>
+        <select >
+      <option value="es">Spanish</option>
+      <option value="en">English</option>
+      {/* Add more language options */}
+    </select>
         </div>
+        
         
       </div>
 
@@ -73,7 +98,7 @@ function App() {
 <div className="contIconFooter">     
           <a href="https://github.com/helsontm" target="blank"><img  className="icoFooter" title="GIT" src='github.png'/></a>
           <a href="https://www.linkedin.com/in/helson-tafur-manchego" target="blank">
-            <img  className="icoFooter"  title="LINKEDIG" src='linkedin.png'/></a>
+            <img  className="icoFooter"  title="LINKEDIN" src='linkedin.png'/></a>
           </div>
         
         </footer>

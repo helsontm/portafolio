@@ -1,0 +1,40 @@
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    /*background-image:linear-gradient(0.25turn,  rgb(93, 23, 154) , rgb(36, 15, 119) ) ;*/
+    background: rgb(241, 243, 243);
+    background-repeat: no-repeat;
+   color: black;
+   font-weight: bolder;
+    opacity: 10;
+    }
+    
+    /* Estilos para los elementos específicos en modo oscuro */
+    body.dark-mode .titleBuscar {background-color: #041522;}
+    /* Stylo del header*/
+   body.dark-mode .header{
+   background:#1850dfef ;
+   }
+   /* Stylo de los iconos*/
+   body.dark-mode .IconoM{opacity: 0.9;}
+   /*Estilo del menu*/
+   body.dark-mode .liHome{color:rgba(0, 0, 0, 0.821) ;}
+   body.dark-mode .liHome:hover{text-shadow: 0 0 40px black;}
+   body.dark-mode .liAbout{color:rgba(0, 0, 0, 0.821) ;}
+   body.dark-mode .liProject{color:rgba(0, 0, 0, 0.821);}
+   body.dark-mode .liContact{color:rgba(0, 0, 0, 0.821) ;}
+   /* Stylo del titulo Principal*/
+   body.dark-mode .title{ color:black; opacity: 0.7;
+   }
+   /* stylo de los titulos de los proyectos*/
+   body.dark-mode .titleEcomers{color:#e40037;}
+   body.dark-mode .titleRick{color: #00b25f;}
+   body.dark-mode .titleWhea{color:  #0C08B1;}
+   /* stylo del foote*/
+    body.dark-mode footer{ background:#1850dfef  ;}
+    body.dark-mode .divImagenes{opacity: 0.9;}
+    
+    body.dark-mode h5 {color: white; opacity:0.8 ;}
+    
+    body.dark-mode input{background-color: #041522;}
+    
+    body.dark-mode button{background-color:#8458e2;  }
