@@ -9,18 +9,19 @@ const Proyect = () => {
 
 <div className="contImageFigura">
         
-      
         <h4 className="aboutMe">My Project</h4>
        <img alt="cuadrado"  className="ImageIco" src='/triangulo.svg'/>
        </div>
 
-       <div className='parrafo'>
+      
        <div className="divProject">
        <div>
         
        <div className="divFrame">
 
-       <div><iframe src="https://e-comerce-equip.vercel.app/" ></iframe></div> 
+       <div><iframe src="https://e-comerce-equip.vercel.app/" allowfullscreen
+       frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+       ></iframe></div> 
        <div className="divDescripcion"><h6>E-COMMERCE</h6>
       <p>Proyecto realizado con tecnologia react, realizado en equipo, 
         se obtuvo experiencia en manejo de un proyecto mas complejo y retador </p>
@@ -50,7 +51,7 @@ const Proyect = () => {
 
        
         
-       </div>
+       
     </div>
      
       

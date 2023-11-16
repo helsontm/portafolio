@@ -1,199 +1,174 @@
-
-
-body{
-  background-color: #181823;
-  color: white;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  border-radius: 10px;
-}
-
-/* stylo de la caja principal*/
-.box{
- 
-  display: flex;
-flex-wrap: wrap;
-justify-content: center; 
-
-
-}
-
-/*----------------Stylo del div de header---------------*/
-.header{
-  display: flex;
-}
-
-
-/*----------Stylo del Div del Meni-----------*/
-.menu{
-  display: flex;
-  justify-content: center;
-}
-
-/*-------------Stylo del ul-------*/
-ul{
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-
-}
-
-/*-----Stylo del Li-------*/
-li  {
-  display: block; 
-  padding-inline: 150px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bolder;
-}
-
-.liAbout:hover{
-  color: #e40037;
-  text-shadow: 0 0 30px #e40037;
-  cursor: pointer;
-}
-
-.liProject:hover{
-  color: #10FFF1;
-  cursor: pointer;
-}
-
-.liContact:hover{
-  color:#0C08B1;
-  cursor: pointer;
-}
-
-/*--------Stylo de un Link-----------------*/
-.link{
-  text-decoration: none;
-}
-
-h1{
-  /*text-shadow: 0 0 30px #fff;*/
-}
-
-/* Stylo del acerca de mi, proyecto y contactenos */
-
-
-/*Stylo de la caja de la imagen de fondo */
-.contImageFigura{
- display: flex;
- flex-wrap: wrap;
- justify-content: center;
-  width: 600px;
-  
+*{
   padding: 0;
   margin: 0;
-}
-
-/* Stylo de la imgane de fondo*/
-.ImageIco{
-  padding-top: -900px;
- z-index: 2;
-  width: 80%;
- 
-}
-
-/* Stylo de la palabra Acerca de mi*/
-.aboutMe{
-  font-weight: bold;
-  size: 300px;
-  position:absolute;
-  bottom: 260px;
-  z-index: 5;
-  opacity: 0.5;
-}
-
-h4{
-  font-size: xx-large;
-}
-
-/*Stylo del titulo  */
-.title{
-  color: #e40035d4;
-font-weight: bold;
 
 }
 
 
+/*---------Stylo del scroball------------*/
+/* Works on Firefox */
+* {
+  scrollbar-width:auto;
+  scrollbar-color: blue #16161F;
+}
 
-/* stylo del parrafo informativo*/
-.parrafo{
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
 
-  padding-top: 30px;
-  background-color: transparent;
-  filter:alpha(opacity=70);
--moz-opacity:.70;opacity:.70;
+*::-webkit-scrollbar-track {
+  background:#16161F;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 5px;
+  border: 3px solid #16161F;
+}
+
+body{
+  /*background-color: #181823;*/
+  
+  /*background:linear-gradient(0.25turn, rgba(90, 86, 103, 0.566),  rgba(9, 1, 15, 0.752)  );*/
+  background:linear-gradient(#1e1e23f0, #1e1e23fb),url("/public/datos.jpg");
+  background-size: 100%;
+  color: white;
+  font-family:'Segoe UI', Roboto, Geneva, Verdana, Calibri, Helvetica;
   border-radius: 10px;
-  width: 600px;
-}
 
-/* stylo de la caja de las imagenes de tecnologias*/
-.contImages{
-  padding-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-/* stylo imagen react gif*/
-.ImgReact{
-  width: 60px;
-  border-radius: 1000% 1000%;
-}
-
-.iconNode{
-  border-radius: 1000% 1000%;
-}
-
-/* stylo de hover imagen icon*/
-.iconPython:hover{
-  /*background: #e40035a8 ;*/
-  border-radius: 10px;
-  transform: scale(1.1); 
-}
-
-.iconJavascript{
-  border-radius: 50px;
-}
-.iconJavascript:hover{
- /* background-color: #0b08b1ac;*/
-  border-radius: 10px;
-  transform: scale(1.1);
-}
-
-.iconNode:hover{
-  /*background-color: #10ffefb8;*/
-  border-radius: 10px;
-  transform: scale(1.1);
-  /*box-shadow: 0 0 20px #4f9;
-  box-shadow: 100% #10ffefb8;*/
-}
-
-.iconJava:hover{
- /* background: #e40035a8 ;*/
-  border-radius: 10px;
-  transform: scale(1.1); 
-}
-
-.iconMysql:hover{
- /* background-color: #0b08b1ac;*/
-  border-radius: 10px;
-  transform: scale(1.1);
-}
-
-.ImgReact:hover{
-
- /* background-color: #10ffefb8;*/
-  border-radius: 1000% 1000%;
-  transform: scale(1.1);
-  box-shadow: 100% #10ffefb8;
-  /*box-shadow: 0 0 20px #4f9;*/
 }
 
 
-/*------------------------Footer-----------------------*/
-.icoFooter{
+
+  /*----------------Stylo del div de header---------------*/
+  .header{
+    position: fixed;
+    /*background:linear-gradient(0.25turn, rgba(16, 14, 19, 0.752),black  );*/
+    background:  #16161fd2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 50;
+  }
+/* stilo del mini titulo head */
+  .titlehead{
+    color:#1d1d27ef ; 
+  }
+  .titlehead:hover{
+    color: rgb(79, 70, 70);
+    
+  }
+
+  /*Stylo del titulo  */
+  .title{
+    color: white;
+    opacity: 0.7;
+   font-weight: bold;
+   
+   }
+  
+  h1{
+   width: 100%;
+  }
+
+  /*-----Iconos pequeños de footer y del head------ */
+  .IconoM{
+    width: 30px;
+    opacity: 0.5;
+  }
+/*  --------------- Stilo del Input cambio de dia-----------------*/
+  input[type="checkbox"] {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background: linear-gradient(0.25turn,  rgba(93, 23, 154, 0.752) , rgba(36, 15, 119, 0.566) );
+    appearance: none;   /* Hides certain features of widgets */ 
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+  } 
+  
+  input[type="checkbox"]:checked {
+    background: linear-gradient(0.25turn, rgb(108, 155, 242),#7425e2, #5d0930 )
+  }
+  
+  input[type="checkbox"]::before {
+     content: '';
+     position: absolute;
+     width: 16px;
+     height: 16px;
+     background-color: #f2f2f2;
+     border-radius: 50%;
+     top: 2px;
+     left: 2px;
+     transition: 0.7s ease;
+  }
+  
+  input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
+  }
+  
+  /*----------Stylo del Div del Menu-----------*/
+  .menu{
+    padding-top: 45px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  /*-------------Stylo del ul-------*/
+  ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+  
+  /*-----Stylo del Li-------*/
+  li  {
+    display: block; 
+    padding-inline: 110px;
+    color: #fff;
+    opacity: 0.8;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  
+  .liHome:hover{
+    opacity: 10;
+    text-shadow: 0 0  40px white ;
+    
+  }
+
+  .liAbout:hover{
+    opacity: 10;
+    text-shadow: 0 0 40px #e40037;
+    cursor: pointer;
+  }
+  
+  .liProject:hover{
+    text-shadow: 0 0 40px  #10FFF1;
+    opacity: 10;
+    cursor: pointer;
+  }
+  
+  .liContact:hover{
+    opacity: 10;
+    text-shadow: 0 0 40px  #0C08B1;
+    cursor: pointer;
+  }
+  
+  /*--------Stylo de un Link-----------------*/
+  .link{
+    text-decoration: none;
+  }
+ /*------------------------Footer-----------------------*/
+ .icoFooter{
   width: 30px;
+  opacity: 0.8;
 }
 
 .icoFooter:hover{
@@ -201,20 +176,30 @@ font-weight: bold;
 }
 
 footer{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+
+ 
+ z-index: 50;
+
+  background-color:#16161fd2;
+  
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
  
 }
 
 .h5Footer{
   font-size:18px;
- 
+  opacity: 0.7;
 }
 
 .contIconFooter{
  
-  padding: 20px;
+ 
  
 }
 

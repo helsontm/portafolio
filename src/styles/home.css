@@ -1,0 +1,51 @@
+/* ---Div principal del home--------*/
+.boxHome{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+/*-----Contenedor del titulo----*/
+.conTitle{
+    margin-top: 10%;
+   width: 35%;
+}
+
+/*----Contenedor de las Imegenes*/
+.divImagenes{
+    margin-top: 2%;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.5;
+}
+
+/* Imagnes de fondo---*/
+.ImageIco1{
+    margin-top: 2%;
+    width: 30%;
+    position: absolute;
+    z-index: 0;
+     top: 16%;
+    left: 29%;
+}
+
+.ImageIco2{
+   
+    width: 35%;
+    position: absolute;
+    z-index: 2;
+    left: 25%;
+}
+
+.ImageIco3{
+    width: 40%;
+    position: absolute;
+    z-index: 1;
+    left: 20%;
+}
+
+
+

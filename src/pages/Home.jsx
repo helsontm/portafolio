@@ -7,49 +7,25 @@ const Home = () => {
     return(
     
        <>
-      
+      <div className="boxHome">
 
-       <div className="box">
-      
-      
-       <div className="contImageFigura">
-        
-      
-        <h4 className="aboutMe">About me</h4>
-       <img alt="cuadrado"  className="ImageIco" src='/cuadrado.svg'/>
-       </div>
+      <div className="divImagenes">
+      <img alt="cuadrado"  className="ImageIco1" src='/cuadrado.svg'/>
+      <img alt="cuadrado"  className="ImageIco2" src='/circulo.svg'/>
+      <img alt="cuadrado"  className="ImageIco3" src='/triangulo.svg'/>
+      </div>
+      <div className="conTitle">
+    <h1 className='title'>HELSON</h1>
+    <h1 className='title'>YAIR</h1>
+    <h1 className='title'>TAFUR </h1>
+    <h1 className='title'>MANCHEGO</h1>
+        </div>
 
-     <div>
-     
-      <div className='parrafo'>
-        <p>
-        Soy un programador con experiencia en Front-End y Back-End, especializado en Excel avanzado, 
-        gestión de bases de datos, desarrollo de aplicaciones web y software de escritorio. <br></br><br></br>
-        Además, tengo experiencia en ventas y atención al cliente, lo que me permite desarrollar aplicaciones 
-        que satisfacen las necesidades comerciales y de los clientes. <br></br><br></br>
-        Mis habilidades incluyen el mantenimiento
-         de software y hardware, instalación de sistemas operativos Windows, manejo de herramientas ofimáticas 
-         y plataformas web.<br></br> 
-        Soy un colaborador eficaz en equipo, proactivo, flexible y comprometido con el aprendizaje continuo.
-        </p>
+
+
       </div>
 
-      <div className="contImages">
-    {/*   <img className="iconPython" title="PYTHON" src='/python.svg'/> */}
-      <img className="iconJavascript" title="JAVASCRIPT" src='/javascript.svg'/>
-
-      <img  className="iconNode" title="NODEJS"   src="nodejs.png"/>
-
-      <img className="iconJava" title='JAVA' src='java.png'/>
-       <img className="iconMysql" title="MYSQL" src='mysql.png'/>
-
-        <img className='ImgReact' title="REACTJS" src="/react1.gif"/>  
-        
-      </div>
-      </div>
-    
-        
-      </div>
+       
        </>
     )
     

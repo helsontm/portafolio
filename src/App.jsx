@@ -2,6 +2,7 @@ import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Proyect from "./pages/Proyect";
+import Contact from "./pages/Contact";
 
 import './App.css'
 
@@ -15,18 +16,31 @@ function App() {
      <main>
      
          <div className='header'>
+          {/*div de los iconos pequeños */}
+          <div>
+          <img   className="IconoM" src='/cuadrado.svg'/>
+          <img   className="IconoM" src='/triangulo.svg'/>
+          <img   className="IconoM" src='/circulo.svg'/>
+          </div>
+
+          <div className="titlehead">
+            <h3>Helson Tafur</h3>
+          </div>
+     
         <div>
-    <h1 className='title'>HELSON YAIR TAFUR MANCHEGO</h1>
+        <input id="checkitem" type="checkbox"  />
         </div>
+        
       </div>
 
       <div className="menu">
         <header>
           <nav>
         <ul>           {/*Link con el nombre de las rutas  */}
-        <Link className="link" to="/"><li className="liAbout">ABOUT</li></Link>
-       <Link className="link" to="/project"> <li className="liProject">PROJECTS</li></Link>
-        <Link className="link" to="/contact"><li className="liContact">CONTACT</li></Link>
+        <Link className="link" to="/"><li className="liHome">INICIO</li></Link>{/* stilo del home  */}
+        <Link className="link" to="/about"><li className="liAbout">SOBRE MI</li></Link>
+       <Link className="link" to="/project"> <li className="liProject">PROJECTOS</li></Link>
+        <Link className="link" to="/contact"><li className="liContact">CONTÁCTAME</li></Link>
         </ul>
         </nav>
         </header>
@@ -34,19 +48,25 @@ function App() {
       </div>
       
 </main>
-
+{/*Las rutas  */}
         <Routes>
         
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About/>} />
           <Route path="/project" element={<Proyect/>}/>
-          <Route path="/contact" element={<About/>}>
+          <Route path="/contact" element={<Contact/>}>
            
           </Route>
 
           
         </Routes>
-       
+       {/*El footer de la pagina*/}
         <footer>
+        <div>
+          <img   className="IconoM" src='/cuadrado.svg'/>
+          <img   className="IconoM" src='/triangulo.svg'/>
+          <img   className="IconoM" src='/circulo.svg'/>
+          </div>
           <div>
           <h5 className="h5Footer">Desarrollador Web FULL STACK</h5>
           </div >
@@ -55,6 +75,7 @@ function App() {
           <a href="https://www.linkedin.com/in/helson-tafur-manchego" target="blank">
             <img  className="icoFooter"  title="LINKEDIG" src='linkedin.png'/></a>
           </div>
+        
         </footer>
 
       </HashRouter>
