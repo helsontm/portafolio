@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Proyect from "./pages/Proyect";
 import Contact from "./pages/Contact";
-import Vitae from "./components/vitae";
+
 import './App.css'
 
 
