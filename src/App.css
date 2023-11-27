@@ -231,7 +231,7 @@ footer{
 
 /* responsive -------------------------*/
  
-@media only screen and (min-width:320px) and (max-width:480px){
+@media only screen and (min-width:320px) and (max-width:580px){
   li  {
     padding-inline: 155px;
   }
