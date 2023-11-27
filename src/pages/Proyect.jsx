@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 const Proyect = () => {
 
     return(
@@ -15,38 +16,32 @@ const Proyect = () => {
 
       
        <div className="divProject">
-       <div>
-        
-       <div className="divFrame">
+       
+      <div className="card">
+        <Link to="https://e-comerce-equip.vercel.app/" target="#"><img className="otra"  src="ecomerce.png"></img></Link>
+        <h3 className="title">E-COMMERCE</h3>
+        <p className="Leyenda">Este proyecto fue desarrollado utilizando la tecnología React y se llevó a cabo de manera colaborativa en equipo. 
+        La experiencia adquirida fue invaluable, 
+        ya que nos enfrentamos a los desafíos y complejidades de gestionar un proyecto más amplio y retador.</p>
+      </div>
 
-       <div><iframe src="https://e-comerce-equip.vercel.app/" allowfullscreen
-       frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-       ></iframe></div> 
-       <div className="divDescripcion"><h3 className="titleEcomers">E-COMMERCE</h3>
-      <p>Proyecto realizado con tecnologia react, realizado en equipo, 
-        se obtuvo experiencia en manejo de un proyecto mas complejo y retador </p>
-       </div>
+      <div className="card">
+        <Link to={"https://rick-morty-puce-three.vercel.app/"} target="#"><img className="otra"  src="rickandmorty.png"></img></Link>
+        <h3 className="title">RICK AND MORTY</h3>
+        <p className="Leyenda">Este proyecto se llevó a cabo utilizando la tecnología React, y se destacó por la implementación exitosa de la paginación. 
+        La experiencia adquirida durante el desarrollo me
+         permitió mejorar las habilidades en la gestión de contenido paginado, 
+         lo que contribuyó significativamente al éxito del proyecto.</p>
+      </div>
 
-       </div>
-      
-       <div className="divFrame">
-        
-    <div><iframe src="https://rick-morty-puce-three.vercel.app/" ></iframe></div>
-    <div className="divDescripcion"><h3 className="titleRick">RICK AND MORTY</h3>
-      <p>Proyecto realizado con tecnologia react, experiencia en paginacion </p>
-       </div>
-
-       </div>
-      
-       <div className="divFrame">
-        <div><iframe src="https://weather-green-alpha.vercel.app/" ></iframe></div>
-        <div className="divDescripcion"><h3 className="titleWhea">WHEATHER</h3>
-      <p>Proyecto realizado con tecnologia react, consumo de appis </p>
-       </div>
-        </div>
+      <div className="card">
+        <Link to={"https://weather-green-alpha.vercel.app/"} target="#"><img className="otra"  src="weather.png"></img></Link>
+        <h3 className="title">WHEATHER</h3>
+        <p className="Leyenda">Este proyecto fue desarrollado utilizando la tecnología React y se centró en el consumo de APIs para obtener información meteorológica. La implementación exitosa de la integración de APIs en el proyecto 
+        me proporcionó valiosa experiencia en la obtención y gestión de datos en 
+        tiempo real para ofrecer información precisa sobre el clima. </p>
+      </div>
   
-       </div>
-      
        </div>
 
        

@@ -47,5 +47,18 @@
     left: 20%;
 }
 
+@media only screen and (min-width:781px) and (max-width:980px){
+    .boxHome { padding: 80px}
+}
+
+
+@media only screen and (min-width:481px) and (max-width:780px){
+    .boxHome { padding: 80px}
+}
+
+@media only screen and (min-width:320px) and (max-width:480px){
+   
+    .boxHome { padding: 80px}
+}
 
 

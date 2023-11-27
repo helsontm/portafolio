@@ -1,17 +1,18 @@
 import { HashRouter, Routes, Route, Link } from "react-router-dom";
-
+import {useTranslation} from "react-i18next";
 
 import {  useState } from "react";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Proyect from "./pages/Proyect";
 import Contact from "./pages/Contact";
+import Vitae from "./components/vitae";
 import './App.css'
 
 
 function App() {
   /*Para Traducir  */
-  
+  const [t, i18n]= useTranslation("global.json");
   
 
 
@@ -28,14 +29,15 @@ function App() {
 
   
   return (
-    <>
+    
      
-     <HashRouter>
-      {/* Se declara el Header de la pagina */}
+    
+      <HashRouter>
+      { /*Se declara el Header de la pagina*/ }
      <main>
      
          <div className='header'>
-          {/*div de los iconos pequeños */}
+          { /*div de los iconos pequeños */}
           <div>
           <img   className="IconoM" src='/cuadrado.svg'/>
           <img   className="IconoM" src='/triangulo.svg'/>
@@ -46,23 +48,27 @@ function App() {
           <h3>-----</h3>
           </div>
      
-        <div>
+        <div className="divcheckbox" >
+          <div className="divCheck">
         <input id="checkitem" type="checkbox"  onClick={changeBulb}/>
-        <select >
+        </div>
+        <div className="divSelect">
+        <select  >
       <option value="es">Spanish</option>
       <option value="en">English</option>
-      {/* Add more language options */}
+      {/* Add more language options */ }
     </select>
+    </div>
         </div>
         
         
-      </div>
+      </div> 
 
       <div className="menu">
         <header>
           <nav>
-        <ul>           {/*Link con el nombre de las rutas  */}
-        <Link className="link" to="/"><li className="liHome">INICIO</li></Link>{/* stilo del home  */}
+        <ul>           {/*Link con el nombre de las rutas*/ }
+        <Link className="link" to="/"><li className="liHome">INICIO</li></Link>{/*stilo del home */ }
         <Link className="link" to="/about"><li className="liAbout">SOBRE MI</li></Link>
        <Link className="link" to="/project"> <li className="liProject">PROJECTOS</li></Link>
         <Link className="link" to="/contact"><li className="liContact">CONTÁCTAME</li></Link>
@@ -73,7 +79,7 @@ function App() {
       </div>
       
 </main>
-{/*Las rutas  */}
+{/* Las rutas */ }
         <Routes>
         
           <Route path="/" element={<Home />} />
@@ -105,10 +111,6 @@ function App() {
 
       </HashRouter>
 
-   
-      
-      
-    </>
   )
 }
 

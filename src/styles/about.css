@@ -32,7 +32,7 @@
     padding-top: -900px;
    z-index: 2;
     width: 90%;
-   opacity: 0.6;
+   opacity: 0.8;
   }
   
   /* Stylo de la palabra Acerca de mi*/
@@ -61,19 +61,23 @@
     filter:alpha(opacity=70);
   -moz-opacity:.70;opacity:.70;
     border-radius: 10px;
-    width: 600px;
+    width: 490px;
     text-align: justify;
   }
+
 
   
   
   /* stylo de la caja de las imagenes de tecnologias*/
   .contImages{
-    padding-top: 50px;
+    padding: 10px;
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     opacity: 0.8;
+    border-radius: 10px;
+    
   }
   
   /* stylo imagen react gif*/
@@ -130,7 +134,13 @@
     box-shadow: 100% #10ffefb8;
     /*box-shadow: 0 0 20px #4f9;*/
   }
-  
+
+  /* ------ Responsible----------------*/
+
+  @media only screen and (min-width:320px) and (max-width:480px){
+     
+
+  }
   
  
   

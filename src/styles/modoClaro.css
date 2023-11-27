@@ -1,7 +1,7 @@
 /* Estilos para el modo oscuro */
 body.dark-mode {
     /*background-image:linear-gradient(0.25turn,  rgb(93, 23, 154) , rgb(36, 15, 119) ) ;*/
-    background: rgb(241, 243, 243);
+    background: lightgrey;
     background-repeat: no-repeat;
    color: black;
    font-weight: bolder;
@@ -12,7 +12,7 @@ body.dark-mode {
     body.dark-mode .titleBuscar {background-color: #041522;}
     /* Stylo del header*/
    body.dark-mode .header{
-   background:#1850dfef ;
+   background: rgb(86, 86, 86);
    }
    /* Stylo de los iconos*/
    body.dark-mode .IconoM{opacity: 0.9;}
@@ -30,7 +30,7 @@ body.dark-mode {
    body.dark-mode .titleRick{color: #00b25f;}
    body.dark-mode .titleWhea{color:  #0C08B1;}
    /* stylo del foote*/
-    body.dark-mode footer{ background:#1850dfef  ;}
+    body.dark-mode footer{ background: rgb(86, 86, 86) ;}
     body.dark-mode .divImagenes{opacity: 0.9;}
     
     body.dark-mode h5 {color: white; opacity:0.8 ;}
@@ -38,3 +38,29 @@ body.dark-mode {
     body.dark-mode input{background-color: #041522;}
     
     body.dark-mode button{background-color:#8458e2;  }
+
+    /*Stylo de los iconos  */
+    body.dark-mode .contImages{
+        
+        background-color:  rgb(86, 86, 86);
+        box-shadow: 10px 5px 5px black;
+    }
+    
+    /* stylo del proyectos la terjeta */
+    body.dark-mode .card{
+        box-shadow: 10px 5px 10px 5px  #090c248b;
+        font-weight:lighter;
+    }
+    body.dark-mode .divProject{
+        box-shadow: 8px 3px 8px 3px  #090c248b;
+    }
+
+
+    /* ---------------responsible--------------------*/
+
+    
+    
+
+
+
+

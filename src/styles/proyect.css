@@ -1,11 +1,11 @@
 
 /*-------------------Div del proyecto general---------------------*/
 .divProject{
-   margin: 40px;
-    background-color: rgba(255, 255, 255, 0.082);
+   margin-top: 40px;
+    background-color: rgba(106, 134, 136, 0.301);
     border-radius: 10px;
-    width: 700px;
-    height: 500px;
+    width: 50%;
+    height: 550px;
     display: flex;
     flex-wrap: wrap;
     border: 1px solid #ccc;
@@ -13,27 +13,80 @@
    overflow-y:scroll;
 }
 
+/*-------------div de las cart o tarjetas------------*/
+
+.card{
+   width: 40%;
+   box-shadow: 10px 5px 10px 5px  #10ffef73;
+   border-radius: 10px;
+   margin: 20px;
+}
+
+.card:hover{
+   transform: scale(1.1); 
+}
+
+.card .otra{
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+   border-top-right-radius: 10px;
+   border-top-left-radius: 10px;
+
+}
+
+
+
+.cart .title{
+ text-transform: uppercase;
+ letter-spacing: 5px;
+ font-weight: 600;
+ text-align: center;
+ padding: 10px;
+}
+
+.cart .Leyenda{
+   text-align: justify;
+   padding: 3px;
+   font-size: 14px;
+   display: block;
+   width: 90%;
+   height: auto;
+   margin: auto;
+}
+
+
+
+
+
 /*------------------Div del iframe---------------------*/
 
 
-iframe{
+.iframe{
     border: 1px solid black;
-  border-radius: 20px; 
- 
-  
+  border-radius: 10px; 
+  /*transform: scale(0.8); /* Escala del 50%, ajusta según tus necesidades */
+      transform-origin: 0 0; /* Establece el origen de la transformación en la esquina superior izquierda */
+      width: 50%; /* Ajusta el ancho según sea necesario */
+     /* Ajusta la altura según sea necesario */
+      
 }
 
+/* Estilo para el enlace */
+
+
 .divFrame{
-   padding: 10px;
-   display:flex;
+   display:inline-flex;
    flex-wrap: wrap;
+   
 }
 
 .divDescripcion{
    padding-left: 10px;
    padding-top: -10px;
-    width: 220px;
+    width: 50%;
     text-align: justify;
+   
 }
 
 /*------------------Hacer responsive el iframe-------------*/

@@ -1,3 +1,5 @@
+
+
 *{
   padding: 0;
   margin: 0;
@@ -9,7 +11,7 @@
 /* Works on Firefox */
 * {
   scrollbar-width:auto;
-  scrollbar-color: gray #16161F;
+  scrollbar-color: gray ;
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -18,20 +20,20 @@
 }
 
 *::-webkit-scrollbar-track {
-  background:#16161F;
+ 
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: gray;
+  background-color: rgb(211, 208, 208);
   border-radius: 5px;
-  border: 3px solid #16161F;
+  border: 1px solid #16161F;
 }
 
 body{
-  /*background-color: #181823;*/
+  /*background-color: #181823; */
   
   /*background:linear-gradient(0.25turn, rgba(90, 86, 103, 0.566),  rgba(9, 1, 15, 0.752)  );*/
-  background:linear-gradient(#1e1e23f0, #1e1e23fb);
+  background:#1e1e23f0;
   background-size: 100%;
   color: white;
   font-family:'Segoe UI', Roboto, Geneva, Verdana, Calibri, Helvetica;
@@ -80,13 +82,24 @@ body{
     width: 30px;
     opacity: 0.5;
   }
+/*-------------div  principal del checkbox-----------------*/
+.divcheckbox{
+  display: flex;
+  flex-wrap: wrap;
+}
+/*------div que contiene el checkbox-------*/
+.divCheck{
+  padding-top: 6px;
+  padding-right: 20px;
+}
+
 /*  --------------- Stilo del Input cambio de dia-----------------*/
   input[type="checkbox"] {
     position: relative;
     width: 40px;
     height: 20px;
-    background: linear-gradient(0.25turn,  #4a4a4ff0,#4e75d9ef );
-    appearance: none;   /* Hides certain features of widgets */ 
+    background: linear-gradient(0.25turn,  #333334f0,#848586ef );
+    appearance: none;   /* Hides certain features of widgets */
     outline: none;
     border-radius: 20px;
     cursor: pointer;
@@ -94,7 +107,7 @@ body{
   } 
   
   input[type="checkbox"]:checked {
-    background: linear-gradient(0.25turn, #1e1e23f0,#818184f0 )
+    background: linear-gradient(0.25turn, #000000f0,#7a7a7bf0 )
   }
   
   input[type="checkbox"]::before {
@@ -112,12 +125,17 @@ body{
   input[type="checkbox"]:checked::before {
     transform: translateX(20px);
   }
+/*------div del select------------------*/
+.divSelect{
+  padding-top: 5px;
+}
+  
   
   /*----------Stylo del Div del Menu-----------*/
   .menu{
-    padding-top: 45px;
+    padding-top: 55px;
     display: flex;
-    justify-content: center;
+    justify-content:right;
     width: 100%;
   }
   
@@ -132,7 +150,7 @@ body{
   /*-----Stylo del Li-------*/
   li  {
     display: block; 
-    padding-inline: 110px;
+    padding-inline: 45px;
     color: #fff;
     opacity: 0.8;
     text-decoration: none;
@@ -142,6 +160,7 @@ body{
   .liHome:hover{
     opacity: 10;
     text-shadow: 0 0  40px white ;
+   
     
   }
 
@@ -156,12 +175,14 @@ body{
     text-shadow: 0 0 40px  #10FFF1;
     opacity: 10;
     cursor: pointer;
+   
   }
   
   .liContact:hover{
     opacity: 10;
     text-shadow: 0 0 40px  #0C08B1;
     cursor: pointer;
+    
   }
   
   /*--------Stylo de un Link-----------------*/
@@ -204,5 +225,17 @@ footer{
  
  
  
+} 
+
+
+
+/* responsive -------------------------*/
+ 
+@media only screen and (min-width:320px) and (max-width:480px){
+  li  {
+    padding-inline: 155px;
+  }
+
 }
+
 
