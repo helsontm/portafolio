@@ -12,7 +12,7 @@ body.dark-mode {
     body.dark-mode .titleBuscar {background-color: #041522;}
     /* Stylo del header*/
    body.dark-mode .header{
-   background: rgb(86, 86, 86);
+   background: rgba(86, 86, 86, 0.962);
    }
    /* Stylo de los iconos*/
    body.dark-mode .IconoM{opacity: 0.9;}
@@ -30,7 +30,7 @@ body.dark-mode {
    body.dark-mode .titleRick{color: #00b25f;}
    body.dark-mode .titleWhea{color:  #0C08B1;}
    /* stylo del foote*/
-    body.dark-mode footer{ background: rgb(86, 86, 86) ;}
+    body.dark-mode footer{ background:rgba(86, 86, 86, 0.945) ;}
     body.dark-mode .divImagenes{opacity: 0.9;}
     
     body.dark-mode h5 {color: white; opacity:0.8 ;}
@@ -55,7 +55,20 @@ body.dark-mode {
         box-shadow: 8px 3px 8px 3px  #090c248b;
     }
 
+    /* ----Stylo de contacteno formulario---*/
+    body.dark-mode form {
+        color:rgba(0, 0, 0, 0.821);
+        box-shadow: 10px 5px 10px 5px #090c248b;
+    }
 
+    body.dark-mode label { color:rgba(0, 0, 0, 0.821);}
+      
+    body.dark-mode input,
+    body.dark-mode textarea {
+       background-color:  #0b08b1dc;
+    }
+
+    body.dark-mode button { background-color:#0b08b1dc;}
     /* ---------------responsible--------------------*/
 
     

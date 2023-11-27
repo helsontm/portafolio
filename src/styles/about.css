@@ -39,8 +39,6 @@
   .aboutMe{
     font-weight: bold;
     size: 300px;
-    position:absolute;
-    bottom: 330px;
     z-index: 5;
     opacity: 0.5;
   }
@@ -138,7 +136,9 @@
   /* ------ Responsible----------------*/
 
   @media only screen and (min-width:320px) and (max-width:480px){
-     
+    .parrafo {  width: 340px;
+    }
+    .contImages { width: 50%;}
 
   }
   

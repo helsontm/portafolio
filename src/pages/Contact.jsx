@@ -9,34 +9,37 @@ const Contact=()=>{
 <div className="contImageFigura">
         
       
-        <h4 className="aboutMe">Contact me</h4>
+        <h4 className="aboutMe">Contactame</h4>
        <img alt="cuadrado"  className="ImageIco" src='/circulo.svg'/>
        </div>
 
-       <div className='parrafo'>
+<div className="divContact">
+       
     <div className="divForm">
-    <form action="/my-handling-form-page" method="post">
-  <ul className="ulConcat">
-    <li className="liConcat">
-      <label for="name">Nombre:</label>
-      <input type="text" id="name" name="user_name" />
-    </li>
-    <li className="liConcat">
-      <label for="mail">Correo electrónico:</label>
-      <input type="email" id="mail" name="user_email" />
-    </li>
-    <li className="liConcat">
-      <label for="msg">Mensaje:</label>
-      <textarea id="msg" name="user_message"></textarea>
-    </li>
-    <li className="button">
-  <button type="submit">Envíe su mensaje</button>
-</li>
-  </ul>
-</form>
+        <form >
+          <p>
+            <label>Nombre</label>
+            <input type="text" name="nombre" required/>
+          </p>
+         
+          <p>
+            <label>Correo</label>
+            <input type="email" name="email" required/>
+          </p>
+          
+          <p className="full">
+            <label>Mensaje</label>
+            <textarea name="mensaje" required></textarea>
+          </p>
+          <p className="full">
+            <button className="boton-enviar">Enviar</button>
+          </p>
+        </form>
+   
     </div>
         
-       </div>
+    </div>
+  
     
      
       

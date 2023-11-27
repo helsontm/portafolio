@@ -10,7 +10,8 @@ const Proyect = () => {
 
 <div className="contImageFigura">
         
-        <h4 className="aboutMe">My Project</h4>
+        <h4 className="aboutMe">Mis Projectos</h4>
+        <img></img>
        <img alt="cuadrado"  className="ImageIco" src='/triangulo.svg'/>
        </div>
 

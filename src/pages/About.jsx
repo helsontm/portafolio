@@ -9,7 +9,7 @@ return(
       <div className="contImageFigura">
        
      
-       <h4 className="aboutMe">About me</h4>
+       <h4 className="aboutMe">Sobre Mi</h4>
       <img alt="cuadrado"  className="ImageIco" src='/cuadrado.svg'/>
       </div>
 

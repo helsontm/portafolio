@@ -53,11 +53,12 @@
 
 
 @media only screen and (min-width:481px) and (max-width:780px){
+    .ImageIco1 { top:auto}
     .boxHome { padding: 80px}
 }
 
 @media only screen and (min-width:320px) and (max-width:480px){
-   
+     .ImageIco1 { top:auto}
     .boxHome { padding: 80px}
 }
 

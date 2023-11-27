@@ -1,19 +1,37 @@
 
 
+.divContact{
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-top: 9%;
+  
+}
+
+
 .divForm{
     /* Es la Altura del formulario */
+     width: 70%;
     padding-top: 30px;
+   
+   
 }
 
 form {
     /* Centrar el formulario en la página */
-   background-color: rgba(255, 255, 255, 0.071);
+   background-color: rgba(106, 134, 136, 0.301);
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
     margin: 0 auto;
-    width: 500px;
+    width: 80%;
+    
     /* Esquema del formulario */
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1em;
+
+    box-shadow: 10px 5px 10px 5px  #0b08b1dc;
   }
   
   .ulConcat {
@@ -29,7 +47,7 @@ form {
   label {
     /* Tamaño y alineación uniforme */
     display: inline-block;
-    width: 90px;
+    width: 80%;
     text-align: left;
   }
   
@@ -37,12 +55,13 @@ form {
   textarea {
     /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
        Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+      
     font: 1em sans-serif;
     background-color: #494993;
     color: white ;
    
     /* Tamaño uniforme del campo de texto */
-    width: 300px;
+    width: 70%;
     box-sizing: border-box;
     border-radius: 5px;
     /* Hacer coincidir los bordes del campo del formulario */
@@ -58,7 +77,7 @@ form {
   textarea {
     /* Alinear los campos de texto multilínea con sus etiquetas */
     vertical-align: top;
-  
+    resize: none;
     /* Proporcionar espacio para escribir texto */
     height: 6em;
   }
@@ -76,5 +95,27 @@ form {
        border-radius: 5px;
        background-color:#494993 ;
        color: white;
-    margin-left: 20em;
+    margin-left: 7em;
+  }
+
+  /*------------Responsive----------*/
+  @media only screen and (min-width:320px) and (max-width:480px){
+    .divContact {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      padding-top: 5%;
+      margin: 10px;
+  }
+
+  form {width: auto;}
+
+  
+  .contImageFigura{ margin: 10px;}
+  
+  }
+
+  @media only screen and (min-width:481px) and (max-width:980px){
+    
+    .contImageFigura{ margin-top: 30px;}
   }

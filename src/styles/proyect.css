@@ -59,35 +59,6 @@
 
 
 
-/*------------------Div del iframe---------------------*/
-
-
-.iframe{
-    border: 1px solid black;
-  border-radius: 10px; 
-  /*transform: scale(0.8); /* Escala del 50%, ajusta según tus necesidades */
-      transform-origin: 0 0; /* Establece el origen de la transformación en la esquina superior izquierda */
-      width: 50%; /* Ajusta el ancho según sea necesario */
-     /* Ajusta la altura según sea necesario */
-      
-}
-
-/* Estilo para el enlace */
-
-
-.divFrame{
-   display:inline-flex;
-   flex-wrap: wrap;
-   
-}
-
-.divDescripcion{
-   padding-left: 10px;
-   padding-top: -10px;
-    width: 50%;
-    text-align: justify;
-   
-}
 
 /*------------------Hacer responsive el iframe-------------*/
 .container {
@@ -103,4 +74,10 @@
    width: 100%;
    height: 100%;
    border: 0;
+}
+
+/*----------Responsive--------------*/
+@media only screen and (min-width:320px) and (max-width:480px){
+   .divProject {    width: 88%;}
+   .card{ width: 98%}
 }
