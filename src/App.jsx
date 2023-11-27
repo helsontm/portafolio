@@ -45,7 +45,7 @@ function App() {
           </div>
 
           <div className="titlehead">
-          <h3>-----</h3>
+          <img className="IconoM" src="imgHelson.png"/>
           </div>
      
         <div className="divcheckbox" >
