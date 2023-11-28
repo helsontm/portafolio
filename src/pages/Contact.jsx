@@ -1,3 +1,5 @@
+import { FormattedMessage } from "react-intl";
+
 const Contact=()=>{
 
     return(
@@ -8,8 +10,8 @@ const Contact=()=>{
 
 <div className="contImageFigura">
         
-      
-        <h4 className="aboutMe">Contactame</h4>
+                                 
+        <h4 className="aboutMe"><FormattedMessage id="cont.aboutMe" defaultMessage={"Contactame"}/></h4>
        <img alt="cuadrado"  className="ImageIco" src='/circulo.svg'/>
        </div>
 
@@ -18,21 +20,21 @@ const Contact=()=>{
     <div className="divForm">
         <form >
           <p>
-            <label>Nombre</label>
+            <label><FormattedMessage id="cont.form.name" defaultMessage={"Nombre"} /></label>
             <input type="text" name="nombre" required/>
           </p>
          
           <p>
-            <label>Correo</label>
+            <label><FormattedMessage id="cont.form.mail" defaultMessage={"Correo"} /></label>
             <input type="email" name="email" required/>
           </p>
           
           <p className="full">
-            <label>Mensaje</label>
+            <label><FormattedMessage id="cont.form.message" defaultMessage={"Mensaje"} /></label>
             <textarea name="mensaje" required></textarea>
           </p>
           <p className="full">
-            <button className="boton-enviar">Enviar</button>
+            <button className="boton-enviar"><FormattedMessage id="cont.form.submit" defaultMessage={"Enviar"} /></button>
           </p>
         </form>
    

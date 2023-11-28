@@ -1,0 +1,22 @@
+{
+    "app.appLang.languageEs" : "Spanish",
+    "app.appLang.languageEn" : "English",
+    "app.nav.home":"HOME",
+    "app.nav.about":"ABOUT",
+    "app.nav.project": "PROJECT",
+    "app.nav.contact":"CONTACT"  , 
+    
+    "cont.aboutMe": "Contact Me",
+    "cont.form.name":"Name" ,
+    "cont.form.mail" : "E-Mail",
+    "cont.form.message":"Message",
+    "cont.form.submit": "Submit",
+
+    "about.aboutMe":"About Me",
+    "about.parrafe":"I am a programmer with experience in Front-End and Back-End development, specializing in advanced Excel, database management, web application development, and desktop software. Additionally, I have experience in sales and customer service, allowing me to create applications that meet both business and customer needs. My skills include software and hardware maintenance, installation of Windows operating systems, proficiency in office tools, and web platforms. I am an effective team collaborator, proactive, flexible, and committed to continuous learning. ",
+
+    "project.aboutMe":"Project",
+    "project.project1":"This project was developed using React technology and was carried out collaboratively as a team effort. The experience gained was invaluable as we encountered the challenges and complexities of managing a larger and more challenging project.",
+    "project.project2":"This project was carried out using React technology and stood out for the successful implementation of pagination. The experience gained during development allowed me to enhance skills in managing paginated content, which contributed significantly to the project's success. ",
+    "project.project3":"This project was developed using React technology and focused on consuming APIs to retrieve weather information. The successful implementation of API integration in the project provided me with valuable experience in obtaining and managing real-time data to provide accurate weather information."
+}

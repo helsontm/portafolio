@@ -1,0 +1,23 @@
+{
+    "app.appLang.languageEs" : "Español",
+    "app.appLang.languageEn" : "Inglés" ,
+    "app.nav.home":"INICIO",
+    "app.nav.about":"SOBRE MI",
+    "app.nav.project": "PROYECTOS",
+    "app.nav.contact":"CONTACTAME",
+
+    "cont.aboutMe": "Contactame",
+    "cont.form.name":"Nombre" ,
+    "cont.form.mail" : "Correo",
+    "cont.form.message":"Mensaje",
+    "cont.form.submit": "Enviar",
+
+    "about.aboutMe":"Sobre Mi",
+    "about.parrafe":"Soy un programador con experiencia en Front-End y Back-End, especializado en Excel avanzado, gestión de bases de datos, desarrollo de aplicaciones web y software de escritorio. Además, tengo experiencia en ventas y atención al cliente, lo que me permite desarrollar aplicaciones que satisfacen las necesidades comerciales y de los clientes. Mis habilidades incluyen el mantenimiento de software y hardware, instalación de sistemas operativos Windows, manejo de herramientas ofimáticas y plataformas web. Soy un colaborador eficaz en equipo, proactivo, flexible y comprometido con el aprendizaje continuo. ",
+
+    "project.aboutMe":"Proyectos",
+    "project.project1":"Este proyecto fue desarrollado utilizando la tecnología React y se llevó a cabo de manera colaborativa en equipo. La experiencia adquirida fue invaluable, ya que nos enfrentamos a los desafíos y complejidades de gestionar un proyecto más amplio y retador.",
+    "project.project2":"Este proyecto se llevó a cabo utilizando la tecnología React, y se destacó por la implementación exitosa de la paginación. La experiencia adquirida durante el desarrollo mepermitió mejorar las habilidades en la gestión de contenido paginado, lo que contribuyó significativamente al éxito del proyecto. ",
+    "project.project3":"Este proyecto fue desarrollado utilizando la tecnología React y se centró en el consumo de APIs para obtener información meteorológica. La implementación exitosa de la integración de APIs en el proyecto me proporcionó valiosa experiencia en la obtención y gestión de datos en tiempo real para ofrecer información precisa sobre el clima."
+
+}

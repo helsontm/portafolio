@@ -1,5 +1,10 @@
 import { HashRouter, Routes, Route, Link } from "react-router-dom";
-import {useTranslation} from "react-i18next";
+
+//importaciones para traducir 
+import { IntlProvider } from 'react-intl';
+import spanish from './translations/es.json';
+import english from './translations/en.json';
+import { FormattedMessage } from "react-intl";
 
 import {  useState } from "react";
 import Home from "./pages/Home";
@@ -12,9 +17,18 @@ import './App.css'
 
 function App() {
   /*Para Traducir  */
-  const [t, i18n]= useTranslation("global.json");
-  
+  const [ locale, setLocale ] = useState('es')
+  const [ language, setLanguage ] = useState(false);
+   
+  const handleLanguages = (e) => {
+    setLocale(e.target.value)
+    if(e.target.value === "es"){
+      setLanguage(true)
 
+    } else {
+      setLanguage(false)
+
+    }}
 
 
   /* Funcion para cambiar de color el fondo  */
@@ -30,8 +44,8 @@ function App() {
   
   return (
     
-     
-    
+     //componente para traducir
+    <IntlProvider messages={locale === 'es' ? spanish : english}   locale={locale}>
       <HashRouter>
       { /*Se declara el Header de la pagina*/ }
      <main>
@@ -44,21 +58,20 @@ function App() {
           <img   className="IconoM" src='/circulo.svg'/>
           </div>
 
-          <div className="titlehead">
-          <img className="IconoM" />
-          </div>
+          <div className="divSelect">
+        <select 
+              onChange={handleLanguages}
+              value={locale}>
+                <option value="es"><FormattedMessage id="app.appLang.languageEs" defaultMessage={"Español"} /></option>
+                <option value="en"><FormattedMessage id="app.appLang.languageEn" defaultMessage={"Inglés"} /></option>
+              </select>
+    </div>
      
         <div className="divcheckbox" >
           <div className="divCheck">
         <input id="checkitem" type="checkbox"  onClick={changeBulb}/>
         </div>
-        <div className="divSelect">
-        <select  >
-      <option value="es">Spanish</option>
-      <option value="en">English</option>
-      {/* Add more language options */ }
-    </select>
-    </div>
+      
         </div>
         
         
@@ -68,10 +81,10 @@ function App() {
         <header>
           <nav>
         <ul>           {/*Link con el nombre de las rutas*/ }
-        <Link className="link" to="/"><li className="liHome">INICIO</li></Link>{/*stilo del home */ }
-        <Link className="link" to="/about"><li className="liAbout">SOBRE MI</li></Link>
-       <Link className="link" to="/project"> <li className="liProject">PROJECTOS</li></Link>
-        <Link className="link" to="/contact"><li className="liContact">CONTÁCTAME</li></Link>
+        <Link className="link" to="/"><li className="liHome"><FormattedMessage id="app.nav.home" defaultMessage={"INICIO"} /></li></Link>{/*stilo del home */ }
+        <Link className="link" to="/about"><li className="liAbout"><FormattedMessage id="app.nav.about" defaultMessage={"SOBRE MI"} /></li></Link>
+       <Link className="link" to="/project"> <li className="liProject"><FormattedMessage id="app.nav.project" defaultMessage={"PROYECTOS"} /></li></Link>
+        <Link className="link" to="/contact"><li className="liContact"><FormattedMessage id="app.nav.contact" defaultMessage={"CONTACTAME"} /></li></Link>
         </ul>
         </nav>
         </header>
@@ -110,8 +123,10 @@ function App() {
         </footer>
 
       </HashRouter>
+      </IntlProvider>
 
   )
 }
+
 
 export default App

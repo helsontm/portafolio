@@ -1,3 +1,4 @@
+import { FormattedMessage } from "react-intl";
 const About = () => {
 
 return(
@@ -9,7 +10,7 @@ return(
       <div className="contImageFigura">
        
      
-       <h4 className="aboutMe">Sobre Mi</h4>
+       <h4 className="aboutMe"><FormattedMessage id="about.aboutMe" defaultMessage={"Sobre Mi"}/></h4>
       <img alt="cuadrado"  className="ImageIco" src='/cuadrado.svg'/>
       </div>
 
@@ -17,14 +18,18 @@ return(
     
      <div className='parrafo'>
        <p>
-       Soy un programador con experiencia en Front-End y Back-End, especializado en Excel avanzado, 
-       gestión de bases de datos, desarrollo de aplicaciones web y software de escritorio. <br></br><br></br>
-       Además, tengo experiencia en ventas y atención al cliente, lo que me permite desarrollar aplicaciones 
-       que satisfacen las necesidades comerciales y de los clientes. <br></br><br></br>
-       Mis habilidades incluyen el mantenimiento
-        de software y hardware, instalación de sistemas operativos Windows, manejo de herramientas ofimáticas 
-        y plataformas web.<br></br> 
-       Soy un colaborador eficaz en equipo, proactivo, flexible y comprometido con el aprendizaje continuo.
+       <FormattedMessage id="about.parrafe" defaultMessage={`
+        Soy un programador con experiencia en Front-End y Back-End, especializado en Excel avanzado, 
+        gestión de bases de datos, desarrollo de aplicaciones web y software de escritorio. 
+        
+        Además, tengo experiencia en ventas y atención al cliente, lo que me permite desarrollar aplicaciones 
+        que satisfacen las necesidades comerciales y de los clientes.
+        Mis habilidades incluyen el mantenimiento
+         de software y hardware, instalación de sistemas operativos Windows, manejo de herramientas ofimáticas 
+         y plataformas web.
+        Soy un colaborador eficaz en equipo, proactivo, flexible y comprometido con el aprendizaje continuo.
+       `}/>
+      
        </p>
      </div>
 
